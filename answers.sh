@@ -84,3 +84,29 @@ from companies c
 inner JOIN employees e
 on c.name=e.Company
 where e.Role='Graphic Designer' "
+
+# count and filter 
+
+#1
+"select name 
+from students
+where points=(select max(points) from students)"
+
+#2
+" SELECT avg(points)
+from students "
+
+#3
+" select count(name)
+from students
+where Points=500 "
+
+#4
+" select name 
+from students
+where name like'%s%' "
+
+#5
+" select name 
+from students
+ ORDER BY points DESC "
